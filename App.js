@@ -662,40 +662,9 @@ export default class App extends React.Component {
               </Text>
             </View>
           </TouchableHighlight>
-          <Slider
-            style={styles.rateSlider}
-            trackImage={ICON_TRACK_1.module}
-            thumbImage={ICON_THUMB_1.module}
-            value={this.state.rate / RATE_SCALE}
-            onSlidingComplete={this._onRateSliderSlidingComplete}
-          />
-          <TouchableHighlight
-            underlayColor={BACKGROUND_COLOR}
-            style={styles.wrapper}
-            onPress={this._onPitchCorrectionPressed}
-          >
-            <View style={styles.button}>
-              <Text
-                style={[styles.text, { fontFamily: "cutive-mono-regular" }]}
-              >
-                PC: {this.state.shouldCorrectPitch ? "yes" : "no"}
-              </Text>
-            </View>
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={this._onSpeakerPressed}
-            underlayColor={BACKGROUND_COLOR}
-          >
-            <MaterialIcons
-              name={
-                this.state.throughEarpiece
-                  ? ICON_THROUGH_EARPIECE
-                  : ICON_THROUGH_SPEAKER
-              }
-              size={32}
-              color="black"
-            />
-          </TouchableHighlight>
+   
+     
+ 
         </View>
         <View />
         {this.state.showVideo ? (
